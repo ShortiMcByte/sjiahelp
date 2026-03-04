@@ -1,6 +1,6 @@
 export async function onRequestPost(context) {
   const corsHeaders = {
-    "Access-Control-Allow-Origin": "https://sjiahub.com",
+    "Access-Control-Allow-Origin": "https://sjiahelp.com",
     "Access-Control-Allow-Methods": "POST, OPTIONS",
     "Access-Control-Allow-Headers": "Content-Type",
     "Content-Type": "application/json",
@@ -25,7 +25,7 @@ export async function onRequestPost(context) {
       );
     }
 
-    // Update listId and dc after creating the Mailchimp audience for sjiahub.com
+    // Update listId and dc after creating the Mailchimp audience for sjiahelp.com
     const listId = "MAILCHIMP_LIST_ID_PLACEHOLDER";
     const dc     = "MAILCHIMP_DC_PLACEHOLDER";  // e.g. "us19" — found in your Mailchimp API key
 
@@ -83,7 +83,7 @@ export async function onRequestOptions(context) {
   return new Response(null, {
     status: 204,
     headers: {
-      "Access-Control-Allow-Origin": "https://sjiahub.com",
+      "Access-Control-Allow-Origin": "https://sjiahelp.com",
       "Access-Control-Allow-Methods": "POST, OPTIONS",
       "Access-Control-Allow-Headers": "Content-Type",
     },

@@ -1,5 +1,5 @@
 ---
-title: "SJIAHub — sJIA Resources for Families and Educators"
+title: "SJIAHelp — sJIA Resources for Families and Educators"
 description: "A resource hub for families, educators, and advocates navigating systemic juvenile idiopathic arthritis (sJIA). Learn, find resources, and discover our children's book."
 keywords: ["sJIA", "systemic juvenile idiopathic arthritis", "sJIA resources", "children's arthritis", "autoinflammatory disease kids"]
 faq:

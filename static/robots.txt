@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sjiahub.com/sitemap.xml
+Sitemap: https://sjiahelp.com/sitemap.xml

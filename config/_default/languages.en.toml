@@ -2,7 +2,7 @@ languageName = "English"
 languageCode = "en"
 weight = 1
 
-title = "SJIAHub"
+title = "SJIAHelp"
 
 [params]
   displayName = "EN"
@@ -15,4 +15,4 @@ title = "SJIAHub"
     logo = "images/logo-mark.webp"
 
   [params.author]
-    name = "SJIAHub"
+    name = "SJIAHelp"

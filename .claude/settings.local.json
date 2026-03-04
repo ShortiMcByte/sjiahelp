@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(start:*)",
+      "Bash(node:*)",
+      "Bash(ls:*)",
+      "Bash(hugo:*)",
+      "Bash(sed:*)"
+    ]
+  }
+}

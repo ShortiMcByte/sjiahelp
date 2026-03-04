@@ -1,6 +1,6 @@
-baseURL = "https://sjiahub.com/"
+baseURL = "https://sjiahelp.com/"
 languageCode = "en"
-title = "SJIAHub"
+title = "SJIAHelp"
 theme = "congo"
 
 [pagination]

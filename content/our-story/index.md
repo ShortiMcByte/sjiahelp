@@ -1,13 +1,13 @@
 ---
-title: "Our Story — Why We Built SJIAHub"
-description: "Corbin was diagnosed with sJIA in August 2024 at age 8. This is our family's story — and why we created SJIAHub and the children's book for every family navigating this rare disease."
+title: "Our Story — Why We Built SJIAHelp"
+description: "Corbin was diagnosed with sJIA in August 2024 at age 8. This is our family's story — and why we created SJIAHelp and the children's book for every family navigating this rare disease."
 keywords: ["sJIA family story", "child diagnosed sJIA", "systemic juvenile idiopathic arthritis diagnosis story", "Corbin sJIA book"]
-summary: "Corbin was diagnosed with sJIA in August 2024. This is our story — and why we built SJIAHub."
+summary: "Corbin was diagnosed with sJIA in August 2024. This is our story — and why we built SJIAHelp."
 faq:
   - q: "Who is Corbin?"
-    a: "Corbin is an 8-year-old who loves video games, swimming, and playing on the playground. He was diagnosed with systemic juvenile idiopathic arthritis (sJIA) in August 2024 by a team at Johns Hopkins. His family created SJIAHub and the children's book to help other families navigate the same difficult journey."
-  - q: "Why did you create SJIAHub?"
-    a: "After Corbin's diagnosis, we discovered that there were very few resources designed to help explain sJIA to children, classmates, and educators. SJIAHub is our effort to build the hub we wished had existed — a place where families, educators, and medical professionals can find clear, honest, hopeful information."
+    a: "Corbin is an 8-year-old who loves video games, swimming, and playing on the playground. He was diagnosed with systemic juvenile idiopathic arthritis (sJIA) in August 2024 by a team at Johns Hopkins. His family created SJIAHelp and the children's book to help other families navigate the same difficult journey."
+  - q: "Why did you create SJIAHelp?"
+    a: "After Corbin's diagnosis, we discovered that there were very few resources designed to help explain sJIA to children, classmates, and educators. SJIAHelp is our effort to build the hub we wished had existed — a place where families, educators, and medical professionals can find clear, honest, hopeful information."
 ---
 
 ## This Is Corbin's Story
@@ -38,14 +38,14 @@ So we wrote it.
 
 *Corbin and the Helpers Inside His Body — A Story About sJIA* is the book we needed. It explains the immune system through the metaphor of "helpers" who sometimes get too excited. It validates the emotional experience of living with uncertainty. It asks for empathy — because everyone has hard days that others can't always see.
 
-## Why SJIAHub
+## Why SJIAHelp
 
-SJIAHub exists because the information is scattered, the awareness is low, and families navigating a new diagnosis deserve a clear starting point.
+SJIAHelp exists because the information is scattered, the awareness is low, and families navigating a new diagnosis deserve a clear starting point.
 
 We are not doctors. We are a family that has lived this — the waiting rooms, the lab draws, the "I don't know how I'll feel tomorrow" conversations with an eight-year-old.
 
-SJIAHub is our small effort to make the path a little easier for the family that comes after us.
+SJIAHelp is our small effort to make the path a little easier for the family that comes after us.
 
 ---
 
-*Have a story to share or a resource to suggest? [Reach out.](mailto:hello@sjiahub.com)*
+*Have a story to share or a resource to suggest? [Reach out.](mailto:hello@sjiahelp.com)*
