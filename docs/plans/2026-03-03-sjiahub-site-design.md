@@ -1,6 +1,6 @@
-# SJIAHub.com — Site Design Document
+# SJIAHelp.com — Site Design Document
 **Date:** 2026-03-03
-**Domain:** sjiahub.com
+**Domain:** sjiahelp.com
 **Hosting:** Cloudflare Pages
 **Repo:** GitHub (AndrewPhebus / shortiMcByte account)
 
@@ -95,9 +95,9 @@ Favicon pipeline: `logo-mark.png` -> `generate-favicons.js` -> all standard size
 
 ## Email Waitlist
 
-- **Service:** Mailchimp (new audience list for sjiahub.com)
+- **Service:** Mailchimp (new audience list for sjiahelp.com)
 - **Integration:** Cloudflare Pages Function at `functions/api/subscribe.js`
-  (ported from SBF site, CORS updated to `https://sjiahub.com`)
+  (ported from SBF site, CORS updated to `https://sjiahelp.com`)
 - **Env var:** `MAILCHIMP_API_KEY` set in Cloudflare Pages dashboard
 - **Fields:** email (required), firstName (optional)
 - **Honeypot:** included for spam prevention
@@ -138,7 +138,7 @@ Loaded from `layouts/partials/extend-head-uncached.html`:
 ```
 User-agent: *
 Allow: /
-Sitemap: https://sjiahub.com/sitemap.xml
+Sitemap: https://sjiahelp.com/sitemap.xml
 ```
 AI crawlers (GPTBot, Google-Extended, Anthropic) must be allowed in Cloudflare Security settings.
 

@@ -1,8 +1,8 @@
-# SJIAHub.com Implementation Plan
+# SJIAHelp.com Implementation Plan
 
 > **For Claude:** REQUIRED SUB-SKILL: Use superpowers:executing-plans to implement this plan task-by-task.
 
-**Goal:** Build and deploy a Hugo + Congo site at sjiahub.com on Cloudflare Pages that educates families about sJIA, promotes a pre-publication children's book with a Mailchimp waitlist, and curates resources.
+**Goal:** Build and deploy a Hugo + Congo site at sjiahelp.com on Cloudflare Pages that educates families about sJIA, promotes a pre-publication children's book with a Mailchimp waitlist, and curates resources.
 
 **Architecture:** Hugo static site with Congo theme (git submodule), Cloudflare Pages Functions for Mailchimp subscribe endpoint, Gemini-generated images, and JSON-LD SEO schemas wired to Congo's `extend-head-uncached.html` partial.
 
@@ -90,9 +90,9 @@ Expected: `hugo.toml  languages.en.toml  menus.en.toml  params.toml`
 
 Replace entire file with:
 ```toml
-baseURL = "https://sjiahub.com/"
+baseURL = "https://sjiahelp.com/"
 languageCode = "en"
-title = "SJIAHub"
+title = "SJIAHelp"
 theme = "congo"
 
 [pagination]
@@ -225,7 +225,7 @@ languageName = "English"
 languageCode = "en"
 weight = 1
 
-title = "SJIAHub"
+title = "SJIAHelp"
 
 [params]
   displayName = "EN"
@@ -234,7 +234,7 @@ title = "SJIAHub"
   dateFormat = "January 2, 2006"
   logo = "images/logo-mark.webp"
   description = "A resource hub for families, educators, and advocates navigating systemic juvenile idiopathic arthritis (sJIA)."
-  author.name = "SJIAHub"
+  author.name = "SJIAHelp"
 ```
 
 ---
@@ -245,7 +245,7 @@ title = "SJIAHub"
 - Create: `assets/css/schemes/sjiahub.css`
 
 ```css
-/* SJIAHub custom Congo color scheme — teal primary, amber accent */
+/* SJIAHelp custom Congo color scheme — teal primary, amber accent */
 :root {
   --color-primary-50:  240, 253, 250;
   --color-primary-100: 204, 251, 241;
@@ -270,7 +270,7 @@ title = "SJIAHub"
 
 ```css
 /* ============================================================
-   SJIAHub Custom Styles
+   SJIAHelp Custom Styles
    ============================================================ */
 
 /* ---------- Amber accent utilities ---------- */
@@ -723,9 +723,9 @@ Congo expects a `layouts/index.html` for a custom homepage. We extend Congo's ba
 {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "SJIAHub",
-  "url": "https://sjiahub.com/",
-  "logo": "https://sjiahub.com/images/og-image.webp",
+  "name": "SJIAHelp",
+  "url": "https://sjiahelp.com/",
+  "logo": "https://sjiahelp.com/images/og-image.webp",
   "description": "A resource hub for families, educators, and advocates navigating systemic juvenile idiopathic arthritis (sJIA).",
   "founder": { "@type": "Person", "name": "Andrew Phebus" }
 }
@@ -770,13 +770,13 @@ Congo expects a `layouts/index.html` for a custom homepage. We extend Congo's ba
 {{/* OG and Twitter meta */}}
 {{ $ogImage := "/images/og-image.webp" }}
 {{ with .Params.featured_image }}{{ $ogImage = . }}{{ end }}
-<meta property="og:title" content="{{ .Title }} | SJIAHub">
+<meta property="og:title" content="{{ .Title }} | SJIAHelp">
 <meta property="og:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta property="og:image" content="{{ .Site.BaseURL }}{{ $ogImage | strings.TrimPrefix "/" }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ .Title }} | SJIAHub">
+<meta name="twitter:title" content="{{ .Title }} | SJIAHelp">
 <meta name="twitter:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ $ogImage | strings.TrimPrefix "/" }}">
 {{ with .Params.keywords }}<meta name="keywords" content="{{ delimit . ", " }}">{{ end }}
@@ -800,7 +800,7 @@ Congo expects a `layouts/index.html` for a custom homepage. We extend Congo's ba
 User-agent: *
 Allow: /
 
-Sitemap: https://sjiahub.com/sitemap.xml
+Sitemap: https://sjiahelp.com/sitemap.xml
 ```
 
 ---
@@ -928,7 +928,7 @@ Expected: `static/favicon.ico`, `static/favicon-16x16.png`, `static/favicon-32x3
 
 ```markdown
 ---
-title: "SJIAHub — sJIA Resources for Families and Educators"
+title: "SJIAHelp — sJIA Resources for Families and Educators"
 description: "A resource hub for families, educators, and advocates navigating systemic juvenile idiopathic arthritis (sJIA). Learn, find resources, and discover our children's book."
 keywords: ["sJIA", "systemic juvenile idiopathic arthritis", "sJIA resources", "children's arthritis", "autoinflammatory disease kids"]
 faq:
@@ -1187,7 +1187,7 @@ faq:
 </div>
 
 <div class="medical-disclaimer">
-Resource links are provided for informational purposes only. SJIAHub does not endorse specific organizations or treatments. Always consult your child's rheumatology care team before making changes to diet, medication, or treatment.
+Resource links are provided for informational purposes only. SJIAHelp does not endorse specific organizations or treatments. Always consult your child's rheumatology care team before making changes to diet, medication, or treatment.
 </div>
 ```
 
@@ -1200,15 +1200,15 @@ Resource links are provided for informational purposes only. SJIAHub does not en
 
 ```markdown
 ---
-title: "Our Story — Why We Built SJIAHub"
-description: "Corbin was diagnosed with sJIA in August 2024 at age 8. This is our family's story — and why we created SJIAHub and the children's book for every family navigating this rare disease."
+title: "Our Story — Why We Built SJIAHelp"
+description: "Corbin was diagnosed with sJIA in August 2024 at age 8. This is our family's story — and why we created SJIAHelp and the children's book for every family navigating this rare disease."
 keywords: ["sJIA family story", "child diagnosed sJIA", "systemic juvenile idiopathic arthritis diagnosis story", "Corbin sJIA book"]
-summary: "Corbin was diagnosed with sJIA in August 2024. This is our story — and why we built SJIAHub."
+summary: "Corbin was diagnosed with sJIA in August 2024. This is our story — and why we built SJIAHelp."
 faq:
   - q: "Who is Corbin?"
-    a: "Corbin is an 8-year-old who loves video games, swimming, and playing on the playground. He was diagnosed with systemic juvenile idiopathic arthritis (sJIA) in August 2024 by a team at Johns Hopkins. His family created SJIAHub and the children's book to help other families navigate the same difficult journey."
-  - q: "Why did you create SJIAHub?"
-    a: "After Corbin's diagnosis, we discovered that there were very few resources designed to help explain sJIA to children, classmates, and educators. SJIAHub is our effort to build the hub we wished had existed — a place where families, educators, and medical professionals can find clear, honest, hopeful information."
+    a: "Corbin is an 8-year-old who loves video games, swimming, and playing on the playground. He was diagnosed with systemic juvenile idiopathic arthritis (sJIA) in August 2024 by a team at Johns Hopkins. His family created SJIAHelp and the children's book to help other families navigate the same difficult journey."
+  - q: "Why did you create SJIAHelp?"
+    a: "After Corbin's diagnosis, we discovered that there were very few resources designed to help explain sJIA to children, classmates, and educators. SJIAHelp is our effort to build the hub we wished had existed — a place where families, educators, and medical professionals can find clear, honest, hopeful information."
 ---
 
 ## This Is Corbin's Story
@@ -1239,17 +1239,17 @@ So we wrote it.
 
 *Corbin and the Helpers Inside His Body — A Story About sJIA* is the book we needed. It explains the immune system through the metaphor of "helpers" who sometimes get too excited. It validates the emotional experience of living with uncertainty. It asks for empathy — because everyone has hard days that others can't always see.
 
-## Why SJIAHub
+## Why SJIAHelp
 
-SJIAHub exists because the information is scattered, the awareness is low, and families navigating a new diagnosis deserve a clear starting point.
+SJIAHelp exists because the information is scattered, the awareness is low, and families navigating a new diagnosis deserve a clear starting point.
 
 We are not doctors. We are a family that has lived this — the waiting rooms, the lab draws, the "I don't know how I'll feel tomorrow" conversations with an eight-year-old.
 
-SJIAHub is our small effort to make the path a little easier for the family that comes after us.
+SJIAHelp is our small effort to make the path a little easier for the family that comes after us.
 
 ---
 
-*Have a story to share or a resource to suggest? [Reach out.](mailto:hello@sjiahub.com)*
+*Have a story to share or a resource to suggest? [Reach out.](mailto:hello@sjiahelp.com)*
 ```
 
 ---
@@ -1262,7 +1262,7 @@ SJIAHub is our small effort to make the path a little easier for the family that
 ```js
 export async function onRequestPost(context) {
   const corsHeaders = {
-    "Access-Control-Allow-Origin": "https://sjiahub.com",
+    "Access-Control-Allow-Origin": "https://sjiahelp.com",
     "Access-Control-Allow-Methods": "POST, OPTIONS",
     "Access-Control-Allow-Headers": "Content-Type",
     "Content-Type": "application/json",
@@ -1287,7 +1287,7 @@ export async function onRequestPost(context) {
       );
     }
 
-    // Update listId and dc after creating the Mailchimp audience for sjiahub.com
+    // Update listId and dc after creating the Mailchimp audience for sjiahelp.com
     const listId = "MAILCHIMP_LIST_ID_PLACEHOLDER";
     const dc     = "MAILCHIMP_DC_PLACEHOLDER";  // e.g. "us19" — found in your Mailchimp API key
 
@@ -1345,7 +1345,7 @@ export async function onRequestOptions(context) {
   return new Response(null, {
     status: 204,
     headers: {
-      "Access-Control-Allow-Origin": "https://sjiahub.com",
+      "Access-Control-Allow-Origin": "https://sjiahelp.com",
       "Access-Control-Allow-Methods": "POST, OPTIONS",
       "Access-Control-Allow-Headers": "Content-Type",
     },
@@ -1390,14 +1390,14 @@ Expected: `ShortiMcByte` shows `Active account: true`
 
 **Step 2: Create repo**
 ```bash
-gh repo create sjiahub --public --description "SJIAHub.com — Resources and book for families navigating sJIA"
+gh repo create sjiahub --public --description "SJIAHelp.com — Resources and book for families navigating sJIA"
 ```
 
 **Step 3: Add remote and push**
 ```bash
 git remote add origin https://github.com/ShortiMcByte/sjiahub.git
 git add .
-git commit -m "feat: initial SJIAHub site with Congo theme, content, and Cloudflare Functions"
+git commit -m "feat: initial SJIAHelp site with Congo theme, content, and Cloudflare Functions"
 git push -u origin main
 ```
 
