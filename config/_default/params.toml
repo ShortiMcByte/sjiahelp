@@ -5,8 +5,9 @@ autoSwitchAppearance = false
 description = "A resource hub for families, educators, and advocates navigating systemic juvenile idiopathic arthritis (sJIA). Learn about sJIA, find resources, and discover our children's book."
 
 [header]
-  logo = "images/logo-mark.webp"
-  logoDark = "images/logo-mark.webp"
+  logo = "images/logo-wordmark.svg"
+  logoDark = "images/logo-wordmark.svg"
+  showTitle = false
 
 mainSections = []
 showRecent = false
