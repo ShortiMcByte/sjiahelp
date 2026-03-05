@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to SJIAHelp</title>
+  <!--[if mso]>
+  <noscript>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  </noscript>
+  <![endif]-->
+  <style>
+    /* Reset */
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; }
+    body { margin: 0; padding: 0; background-color: #f5f3ff; font-family: Arial, Helvetica, sans-serif; }
+
+    /* Typography */
+    .email-body { background-color: #f5f3ff; margin: 0; padding: 0; }
+    .wrapper { max-width: 600px; margin: 0 auto; }
+
+    /* Header */
+    .header { background-color: #6d28d9; padding: 32px 40px; text-align: center; border-radius: 12px 12px 0 0; }
+    .logo-shield { display: inline-block; }
+    .site-name { color: #ffffff; font-size: 28px; font-weight: 700; letter-spacing: -0.5px; margin: 12px 0 0; font-family: Arial, Helvetica, sans-serif; }
+    .site-name span { color: #f59e0b; }
+    .tagline { color: #ddd6fe; font-size: 13px; margin: 6px 0 0; letter-spacing: 0.5px; text-transform: uppercase; font-family: Arial, Helvetica, sans-serif; }
+
+    /* Body */
+    .body-cell { background-color: #ffffff; padding: 40px 40px 32px; }
+    .greeting { color: #1e1b4b; font-size: 22px; font-weight: 700; margin: 0 0 16px; font-family: Arial, Helvetica, sans-serif; }
+    .body-text { color: #374151; font-size: 15px; line-height: 1.7; margin: 0 0 20px; font-family: Arial, Helvetica, sans-serif; }
+
+    /* Book callout */
+    .book-callout { background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%); border-left: 4px solid #6d28d9; border-radius: 0 8px 8px 0; padding: 20px 24px; margin: 24px 0; }
+    .book-title { color: #4c1d95; font-size: 16px; font-weight: 700; font-style: italic; margin: 0 0 6px; font-family: Arial, Helvetica, sans-serif; }
+    .book-desc { color: #5b21b6; font-size: 14px; line-height: 1.6; margin: 0; font-family: Arial, Helvetica, sans-serif; }
+
+    /* What to expect */
+    .section-heading { color: #6d28d9; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin: 28px 0 16px; font-family: Arial, Helvetica, sans-serif; }
+    .expect-item { display: flex; margin: 0 0 14px; }
+    .expect-icon { color: #f59e0b; font-size: 18px; font-weight: 700; width: 28px; flex-shrink: 0; font-family: Arial, Helvetica, sans-serif; }
+    .expect-text { color: #374151; font-size: 14px; line-height: 1.6; font-family: Arial, Helvetica, sans-serif; }
+    .expect-text strong { color: #1e1b4b; }
+
+    /* CTA Button */
+    .cta-wrap { text-align: center; margin: 32px 0; }
+    .cta-btn { display: inline-block; background-color: #6d28d9; color: #ffffff !important; text-decoration: none; font-size: 15px; font-weight: 700; padding: 14px 36px; border-radius: 8px; font-family: Arial, Helvetica, sans-serif; letter-spacing: 0.3px; }
+    .cta-btn:hover { background-color: #5b21b6; }
+
+    /* Divider */
+    .divider { border: none; border-top: 1px solid #e5e7eb; margin: 28px 0; }
+
+    /* Closer */
+    .closer { color: #374151; font-size: 14px; line-height: 1.7; margin: 0 0 20px; font-family: Arial, Helvetica, sans-serif; }
+    .sign-off { color: #1e1b4b; font-size: 15px; font-weight: 700; margin: 16px 0 0; font-family: Arial, Helvetica, sans-serif; }
+    .sign-off-sub { color: #6b7280; font-size: 13px; margin: 2px 0 0; font-family: Arial, Helvetica, sans-serif; }
+
+    /* Footer */
+    .footer { background-color: #4c1d95; padding: 24px 40px; border-radius: 0 0 12px 12px; text-align: center; }
+    .footer-text { color: #c4b5fd; font-size: 12px; line-height: 1.6; margin: 0 0 8px; font-family: Arial, Helvetica, sans-serif; }
+    .footer-link { color: #f59e0b; text-decoration: none; font-family: Arial, Helvetica, sans-serif; }
+    .footer-unsubscribe { color: #a78bfa; font-size: 11px; margin: 8px 0 0; font-family: Arial, Helvetica, sans-serif; }
+    .footer-unsubscribe a { color: #a78bfa; font-family: Arial, Helvetica, sans-serif; }
+
+    /* Mobile */
+    @media only screen and (max-width: 600px) {
+      .wrapper { width: 100% !important; }
+      .header, .body-cell, .footer { padding-left: 24px !important; padding-right: 24px !important; }
+      .header { border-radius: 0 !important; }
+      .footer { border-radius: 0 !important; }
+    }
+  </style>
+</head>
+<body class="email-body">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td style="padding: 24px 16px;">
+        <table class="wrapper" role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+
+          <!-- HEADER -->
+          <tr>
+            <td class="header">
+              <!-- Inline SVG logo mark -->
+              <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="SJIAHelp shield logo">
+                <path d="M26 2L4 12v16c0 12.5 9.3 24.2 22 27 12.7-2.8 22-14.5 22-27V12L26 2z" fill="#ffffff" fill-opacity="0.15" stroke="#ffffff" stroke-width="1.5"/>
+                <path d="M26 2L4 12v16c0 12.5 9.3 24.2 22 27 12.7-2.8 22-14.5 22-27V12L26 2z" fill="none" stroke="#a78bfa" stroke-width="1"/>
+                <polygon points="26,14 28.4,21.2 36,21.2 29.8,25.5 32.2,32.7 26,28.4 19.8,32.7 22.2,25.5 16,21.2 23.6,21.2" fill="#f59e0b"/>
+              </svg>
+              <div class="site-name">SJIA<span>Help</span></div>
+              <div class="tagline">Resources for families navigating sJIA</div>
+            </td>
+          </tr>
+
+          <!-- BODY -->
+          <tr>
+            <td class="body-cell">
+
+              <p class="greeting">You're on the list, *|FNAME|*!</p>
+
+              <p class="body-text">
+                Thank you for joining the SJIAHelp community. You took a step toward finding real, honest support for navigating systemic juvenile idiopathic arthritis, and we're glad you're here.
+              </p>
+
+              <!-- Book callout -->
+              <div class="book-callout">
+                <div class="book-title">Corbin and the Helpers Inside His Body</div>
+                <div class="book-desc">
+                  A children's book that helps kids with sJIA understand what's happening in their bodies, in language they can actually understand. We'll let you know the moment it's available.
+                </div>
+              </div>
+
+              <p class="body-text">
+                sJIA is rare, confusing, and exhausting to navigate, especially when you're trying to explain it to a child who just wants to know why they hurt. That's exactly why this community exists.
+              </p>
+
+              <!-- What to expect -->
+              <div class="section-heading">What you'll hear from us</div>
+
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding: 0 0 12px;">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td style="width:28px; vertical-align:top; color:#f59e0b; font-size:18px; font-weight:700; font-family:Arial,sans-serif; padding-right:8px;">&#9733;</td>
+                        <td style="font-size:14px; color:#374151; line-height:1.6; font-family:Arial,sans-serif;"><strong style="color:#1e1b4b;">Book launch updates</strong>, including pre-order availability and release date</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 0 12px;">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td style="width:28px; vertical-align:top; color:#f59e0b; font-size:18px; font-weight:700; font-family:Arial,sans-serif; padding-right:8px;">&#9733;</td>
+                        <td style="font-size:14px; color:#374151; line-height:1.6; font-family:Arial,sans-serif;"><strong style="color:#1e1b4b;">Curated sJIA resources</strong> for parents, caregivers, and educators</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 0 12px;">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td style="width:28px; vertical-align:top; color:#f59e0b; font-size:18px; font-weight:700; font-family:Arial,sans-serif; padding-right:8px;">&#9733;</td>
+                        <td style="font-size:14px; color:#374151; line-height:1.6; font-family:Arial,sans-serif;"><strong style="color:#1e1b4b;">School accommodation guides</strong>, including 504 plan support</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 0 12px;">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td style="width:28px; vertical-align:top; color:#f59e0b; font-size:18px; font-weight:700; font-family:Arial,sans-serif; padding-right:8px;">&#9733;</td>
+                        <td style="font-size:14px; color:#374151; line-height:1.6; font-family:Arial,sans-serif;"><strong style="color:#1e1b4b;">Community stories</strong> from families who get it</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- CTA -->
+              <div class="cta-wrap">
+                <a href="https://sjiahelp.com/resources/" class="cta-btn">Explore sJIA Resources</a>
+              </div>
+
+              <hr class="divider" />
+
+              <p class="closer">
+                No spam, no noise. Just helpful updates when we have something worth sharing. You can unsubscribe anytime, no hard feelings.
+              </p>
+
+              <p class="closer">
+                If you have a resource you love or a story you'd like to share, reply to this email. We read every one.
+              </p>
+
+              <p class="sign-off">With you in this,</p>
+              <p class="sign-off-sub">The SJIAHelp Team<br />sjiahelp.com</p>
+
+            </td>
+          </tr>
+
+          <!-- FOOTER -->
+          <tr>
+            <td class="footer">
+              <p class="footer-text">
+                You're receiving this because you signed up at <a href="https://sjiahelp.com" class="footer-link">sjiahelp.com</a>.
+              </p>
+              <p class="footer-text" style="margin-bottom:0;">
+                SJIAHelp &bull; Resources for families navigating systemic juvenile idiopathic arthritis
+              </p>
+              <p class="footer-unsubscribe">
+                <a href="*|UNSUB|*">Unsubscribe</a> &nbsp;&bull;&nbsp; <a href="*|UPDATE_PROFILE|*">Update preferences</a>
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

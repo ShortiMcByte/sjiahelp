@@ -55,8 +55,10 @@ Do NOT use AndrewPhebus account (that is the andrewphebus.com personal site).
 ## Email Waitlist
 
 - Cloudflare Pages Function: `functions/api/subscribe.js`
-- Mailchimp list ID and dc: **still placeholders** — update after creating Mailchimp audience
-- MAILCHIMP_API_KEY: set as env var in Cloudflare Pages dashboard (not yet configured)
+- Mailchimp list ID: `a6fea79569`, dc: `us18` (SJIA Help audience)
+- sjiaMailchimpAPIKey: set as env var in Cloudflare Pages dashboard (not yet configured)
+- **Mailchimp data center:** us18
+- **Welcome email template ID:** 11811742 ("SJIAHelp Welcome Email")
 
 ## SEO
 
@@ -85,7 +87,7 @@ These are candidates for future content pages or downloadable resources.
 ## Cloudflare Pages — Still Needed
 
 - [ ] Connect Cloudflare Pages to ShortiMcByte/sjiahub
-- [ ] Set env vars: `HUGO_VERSION=0.155.3`, `MAILCHIMP_API_KEY`
+- [ ] Set env vars: `HUGO_VERSION=0.155.3`, `sjiaMailchimpAPIKey`
 - [ ] Enable submodule cloning in build settings
 - [ ] Create Mailchimp audience for sjiahelp.com, update listId + dc in subscribe.js
 - [ ] Disable Rocket Loader + Cloudflare Fonts in Speed settings

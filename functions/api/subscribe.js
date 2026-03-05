@@ -17,7 +17,7 @@ export async function onRequestPost(context) {
       );
     }
 
-    const apiKey = context.env.MAILCHIMP_API_KEY;
+    const apiKey = context.env.sjiaMailchimpAPIKey;
     if (!apiKey) {
       return new Response(
         JSON.stringify({ success: false, message: "Newsletter temporarily unavailable." }),
@@ -25,9 +25,8 @@ export async function onRequestPost(context) {
       );
     }
 
-    // Update listId and dc after creating the Mailchimp audience for sjiahelp.com
-    const listId = "MAILCHIMP_LIST_ID_PLACEHOLDER";
-    const dc     = "MAILCHIMP_DC_PLACEHOLDER";  // e.g. "us19" — found in your Mailchimp API key
+    const listId = "a6fea79569";
+    const dc     = "us18";
 
     const memberData = {
       email_address: email,
