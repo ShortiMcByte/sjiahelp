@@ -3,264 +3,225 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>504 Meeting Preparation Guide | SJIAHelp</title>
+<title>504 Meeting Guide | SJIAHelp.com</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    color: #1a1a2e;
-    background: #fff;
-    line-height: 1.5;
-    font-size: 11pt;
-  }
-  .header {
-    background: #6d28d9;
-    color: #fff;
-    padding: 20px 32px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .header h1 {
-    font-size: 18pt;
-    font-weight: 700;
-    letter-spacing: -0.3px;
-  }
-  .header h1 span { font-weight: 400; }
-  .header .url { color: #f59e0b; font-size: 11pt; font-weight: 600; }
-  .container { max-width: 750px; margin: 0 auto; padding: 24px 32px 40px; }
-  .intro {
-    background: #f5f3ff;
-    border-left: 4px solid #6d28d9;
-    padding: 14px 18px;
-    margin-bottom: 28px;
-    font-size: 10.5pt;
-    color: #374151;
-  }
-  h2 {
-    color: #6d28d9;
-    font-size: 14pt;
-    margin: 28px 0 12px;
-    padding-bottom: 4px;
-    border-bottom: 2px solid #ede9fe;
-  }
-  h2:first-of-type { margin-top: 0; }
-  .fill-line {
-    display: block;
-    border-bottom: 1px solid #9ca3af;
-    min-height: 24px;
-    margin: 6px 0;
-  }
-  .fill-row {
-    display: flex;
-    gap: 16px;
-    margin: 6px 0;
-  }
-  .fill-row label {
-    flex: 1;
-    font-size: 10pt;
-    color: #6b7280;
-  }
-  .fill-row .fill-line { flex: 2; }
-  label.field {
-    display: flex;
-    align-items: baseline;
-    gap: 8px;
-    font-size: 10pt;
-    color: #6b7280;
-    margin: 8px 0;
-  }
-  label.field .fill-line { flex: 1; }
-  .checklist { list-style: none; padding: 0; }
-  .checklist li {
-    padding: 5px 0 5px 4px;
-    border-bottom: 1px solid #f3f4f6;
-    display: flex;
-    align-items: flex-start;
-    gap: 8px;
-  }
-  .checklist li .box {
-    flex-shrink: 0;
-    font-size: 13pt;
-    line-height: 1.3;
-  }
-  .checklist li span { flex: 1; }
-  .emergency-box {
-    border: 2px solid #dc2626;
-    border-radius: 6px;
-    padding: 14px 18px;
-    margin: 16px 0;
-    background: #fef2f2;
-  }
-  .emergency-box h3 {
-    color: #dc2626;
-    font-size: 11pt;
-    margin-bottom: 8px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-  .non-emergency-box {
-    border: 2px solid #f59e0b;
-    border-radius: 6px;
-    padding: 14px 18px;
-    margin: 16px 0;
-    background: #fffbeb;
-  }
-  .non-emergency-box h3 {
-    color: #b45309;
-    font-size: 11pt;
-    margin-bottom: 8px;
-  }
-  .note {
-    font-size: 9.5pt;
-    color: #6b7280;
-    font-style: italic;
-    margin: 4px 0 8px 28px;
-  }
-  .questions ol {
-    padding-left: 20px;
-    margin: 8px 0;
-  }
-  .questions li {
-    padding: 6px 0;
-    border-bottom: 1px dotted #e5e7eb;
-  }
-  .questions .fill-line { margin-top: 2px; }
-  .footer {
-    text-align: center;
-    margin-top: 36px;
-    padding-top: 16px;
-    border-top: 2px solid #ede9fe;
-    font-size: 10pt;
-    color: #6b7280;
-  }
-  .footer strong { color: #6d28d9; }
-
+  body { font-family: system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; font-size: 10.5pt; line-height: 1.65; color: #1a1a2e; background: #fff; padding: 0; }
+  .header { background: #6d28d9; color: #fff; padding: 18px 32px; display: flex; align-items: center; justify-content: space-between; }
+  .header .brand { font-size: 20pt; font-weight: 700; letter-spacing: -0.5px; }
+  .header .url { color: #f59e0b; font-size: 10pt; font-weight: 600; }
+  .content { max-width: 780px; margin: 0 auto; padding: 28px 32px 60px; }
+  h1 { color: #6d28d9; font-size: 18pt; margin-bottom: 4px; }
+  .subtitle { color: #555; font-size: 11pt; margin-bottom: 8px; }
+  .instructions { background: #f5f3ff; border: 2px dashed #6d28d9; border-radius: 8px; padding: 14px 18px; margin-bottom: 24px; font-size: 9.5pt; color: #4c1d95; }
+  h2 { color: #6d28d9; font-size: 13pt; margin-top: 28px; margin-bottom: 10px; border-bottom: 2px solid #ede9fe; padding-bottom: 4px; }
+  h3 { color: #4c1d95; font-size: 11pt; margin-top: 18px; margin-bottom: 8px; }
+  p { margin-bottom: 10px; }
+  ul, ol { margin: 8px 0 14px 24px; }
+  li { margin-bottom: 6px; }
+  .callout { background: #f5f3ff; border-left: 4px solid #6d28d9; padding: 12px 16px; margin: 14px 0; border-radius: 0 6px 6px 0; }
+  .callout.warning { background: #fef2f2; border-left-color: #dc2626; }
+  .callout.amber { background: #fefce8; border-left-color: #f59e0b; }
+  .callout strong { color: #6d28d9; }
+  .callout.warning strong { color: #dc2626; }
+  .fill-line { border-bottom: 1px solid #9ca3af; display: inline-block; min-width: 260px; margin-left: 4px; height: 1.2em; vertical-align: bottom; }
+  .fill-block { border: 1px solid #d1d5db; border-radius: 6px; padding: 10px 14px; margin: 8px 0 14px; min-height: 60px; background: #fafafa; }
+  .fill-block .label { font-size: 9pt; color: #6b7280; margin-bottom: 4px; font-weight: 600; }
+  .checklist { list-style: none; margin-left: 0; padding-left: 0; }
+  .checklist li { padding-left: 24px; position: relative; margin-bottom: 8px; }
+  .checklist li::before { content: "\2610"; position: absolute; left: 0; color: #6d28d9; font-size: 13pt; line-height: 1.4; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 10px 0; }
+  .symptom-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 6px; padding: 10px 14px; }
+  .symptom-card.emergency { border-color: #dc2626; border-width: 2px; }
+  .symptom-card h4 { font-size: 10pt; margin-bottom: 6px; }
+  .symptom-card.emergency h4 { color: #dc2626; }
+  .section-divider { border: none; border-top: 3px solid #ede9fe; margin: 32px 0; }
+  .footer { background: #f5f3ff; border-top: 2px solid #ede9fe; padding: 14px 32px; text-align: center; font-size: 8.5pt; color: #6b7280; position: fixed; bottom: 0; left: 0; right: 0; }
+  .footer-spacer { height: 60px; }
   @media print {
+    body { padding: 0; font-size: 10pt; }
+    .header { position: static; }
+    .footer { position: static; }
+    .footer-spacer { display: none; }
+    .content { padding: 16px 0; }
+    h2, h3 { page-break-after: avoid; }
+    li, .callout, .fill-block, .symptom-card { page-break-inside: avoid; }
+    .two-col { page-break-inside: avoid; }
+    a::after { content: none !important; }
     @page { margin: 0.75in; }
-    body { font-size: 10.5pt; }
-    .header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-    .emergency-box, .non-emergency-box { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-    .intro { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-    .checklist, .emergency-box, .non-emergency-box, h2 { break-inside: avoid; }
-    .container { padding: 16px 0 0; }
-    a { text-decoration: none; color: inherit; }
   }
 </style>
 </head>
 <body>
 
 <div class="header">
-  <h1>SJIAHelp <span>| 504 Meeting Preparation Guide</span></h1>
-  <div class="url">sjiahelp.com</div>
+  <span class="brand">SJIAHelp</span>
+  <span class="url">sjiahelp.com</span>
 </div>
 
-<div class="container">
+<div class="content">
 
-<div class="intro">
-  Bring this guide to your child's 504 meeting. Fill in the blanks ahead of time so the school team understands your child's specific needs. sJIA is an autoinflammatory disease where the immune system attacks the body, impacting not just the joints (arthritis) but also organs and muscles. Getting sick can be very serious and may result in a severe flare-up including hospitalization. The school needs to understand what to watch for and how to respond.
+<h1>504 Meeting Guide for sJIA</h1>
+<p class="subtitle">A "Bring This With You" Template for Parents</p>
+
+<div class="instructions">
+  <strong>How to use this document:</strong> Fill in the blanks with your child's specific information before your 504 meeting. Bring a printed copy to share with the school team. This helps ensure nothing gets missed, and gives teachers clear guidance on what to watch for and how to support your child.
 </div>
 
-<h2>Understanding _______________'s sJIA</h2>
+<h2>About My Child</h2>
+<p><strong>Child's Name:</strong> <span class="fill-line"></span></p>
+<p><strong>Grade / Teacher:</strong> <span class="fill-line"></span></p>
+<p><strong>Date of Meeting:</strong> <span class="fill-line"></span></p>
+<p><strong>Parent/Guardian Contact:</strong> <span class="fill-line"></span></p>
+<p><strong>Emergency Contact (secondary):</strong> <span class="fill-line"></span></p>
 
-<label class="field">Child's full name: <span class="fill-line"></span></label>
-<label class="field">Date of birth / Grade: <span class="fill-line"></span></label>
-<label class="field">Teacher(s): <span class="fill-line"></span></label>
-<label class="field">Current medications: <span class="fill-line"></span></label>
-<label class="field"><span class="fill-line"></span></label>
-<label class="field">Medication side effects the school should know about: <span class="fill-line"></span></label>
-<label class="field"><span class="fill-line"></span></label>
-<label class="field">Known triggers (stress, cold, illness, etc.): <span class="fill-line"></span></label>
-<label class="field"><span class="fill-line"></span></label>
+<h2>Understanding sJIA</h2>
+<p>sJIA (Systemic Juvenile Idiopathic Arthritis) is an autoinflammatory disease where the immune system attacks the body. It impacts not just the joints (arthritis) but other parts of the body including organs and muscles. Getting sick can be very serious and result in a severe flare-up including hospitalization.</p>
 
-<p class="note">Note: Anti-inflammatory medications (e.g. naproxen/Aleve) can mask underlying symptoms including muscle pain and fever. A reading that seems low may actually indicate a flare.</p>
+<div class="fill-block">
+  <div class="label">Current medications and notes (fill in):</div>
+</div>
 
-<h2>Signs to Watch For</h2>
-<p>These signs may indicate a flare-up is starting or already underway:</p>
+<div class="callout">
+  <strong>Important:</strong> Some medications (like Aleve/naproxen) can mask underlying symptoms including muscle pain and fever, making it harder to detect a flare. Anti-inflammatory medications may make your child appear better than they actually feel.
+</div>
+
+<hr class="section-divider">
+
+<h2>Signs of a Flare-Up</h2>
+<p>Teachers and staff should watch for these warning signs. A flare-up can escalate quickly.</p>
+
+<div class="two-col">
+  <div class="symptom-card">
+    <h4>Watch For:</h4>
+    <ul class="checklist">
+      <li>"Raccoon eyes" (redness on the eyelids)</li>
+      <li>Limp when walking</li>
+      <li>Complaining of body aches (particularly "legs hurt")</li>
+      <li>Low fever (above 99.5 with meds can signal a flare)</li>
+      <li>Rash, usually under arms and upper legs, but may appear on face or joints</li>
+      <li>Fatigue or seeming unusually tired</li>
+    </ul>
+  </div>
+  <div class="symptom-card emergency">
+    <h4>Call Parents Immediately:</h4>
+    <ul class="checklist">
+      <li>Shortness of breath (if not resolved in 5-10 minutes, or lips turning blue / unable to talk, call 911)</li>
+      <li>Heart palpitations</li>
+      <li>Severe pain (significant limp, inability to walk)</li>
+      <li>High fever over 101.5</li>
+      <li>Severe or noticeable swelling (if larger than a golf ball, call 911)</li>
+    </ul>
+  </div>
+</div>
+
+<div class="callout amber">
+  <strong>Note about anxiety:</strong> This child may also experience anxiety attacks, which can cause shortness of breath and heart palpitations. However, always err on the side of caution, contact parents to confirm.
+</div>
+
+<h3>Non-Emergency but Contact Parents:</h3>
 <ul class="checklist">
-  <li><span class="box">&#9744;</span><span><strong>Raccoon eyes</strong>, redness or discoloration on the eyelids</span></li>
-  <li><span class="box">&#9744;</span><span><strong>Limp when walking</strong> or difficulty with gait</span></li>
-  <li><span class="box">&#9744;</span><span><strong>Body aches</strong>, particularly complaining that legs hurt</span></li>
-  <li><span class="box">&#9744;</span><span><strong>Low fever</strong>, if above 99.5 F while on medication, this can signal a flare</span></li>
-  <li><span class="box">&#9744;</span><span><strong>Rash</strong>, usually under arms and upper legs, but may appear as red splotches on face or joints</span></li>
-  <li><span class="box">&#9744;</span><span><strong>Shortness of breath</strong></span></li>
-  <li><span class="box">&#9744;</span><span><strong>Heart palpitations</strong></span></li>
-  <li><span class="box">&#9744;</span><span><strong>Fatigue</strong> or unusual tiredness</span></li>
+  <li>Complaining of pain/discomfort, shows limp</li>
+  <li>Minor swelling in any joints</li>
+  <li>Low fever 99.5 to 101.5</li>
 </ul>
 
-<h2>Emergency vs. Non-Emergency Response</h2>
+<hr class="section-divider">
 
-<div class="emergency-box">
-  <h3>Call 911 / Contact Parents Immediately</h3>
-  <ul class="checklist">
-    <li><span class="box">&#9744;</span><span>Shortness of breath that does not resolve in 5-10 minutes, lips turning blue, or inability to talk</span></li>
-    <li><span class="box">&#9744;</span><span>Heart palpitations</span></li>
-    <li><span class="box">&#9744;</span><span>Severe pain, significant limp, or inability to walk</span></li>
-    <li><span class="box">&#9744;</span><span>High fever over 101.5 F</span></li>
-    <li><span class="box">&#9744;</span><span>Severe or noticeable swelling (if larger than a golf ball, call 911)</span></li>
-  </ul>
-  <p class="note">Note: Anxiety attacks can also cause shortness of breath and heart palpitations. If you know the child is anxious, try calming techniques first, but still contact parents.</p>
-</div>
-
-<div class="non-emergency-box">
-  <h3>Contact Parents (Non-Emergency)</h3>
-  <ul class="checklist">
-    <li><span class="box">&#9744;</span><span>Complaining of pain or discomfort, showing a limp</span></li>
-    <li><span class="box">&#9744;</span><span>Minor swelling in any joints</span></li>
-    <li><span class="box">&#9744;</span><span>Low fever between 99.5 and 101.5 F</span></li>
-  </ul>
-</div>
-
-<label class="field">Emergency contact 1: <span class="fill-line"></span></label>
-<label class="field">Emergency contact 2: <span class="fill-line"></span></label>
-<label class="field">Doctor / Rheumatologist: <span class="fill-line"></span></label>
-
-<h2>What We Need From the School</h2>
+<h2>Absences from School</h2>
 <ul class="checklist">
-  <li><span class="box">&#9744;</span><span>Allow periodic breaks to stand, stretch, and move around (staying seated too long causes stiffness)</span></li>
-  <li><span class="box">&#9744;</span><span>Allow alternating between sitting and standing during the day</span></li>
-  <li><span class="box">&#9744;</span><span>Option to sit on the floor or carpet for work when comfortable</span></li>
-  <li><span class="box">&#9744;</span><span>Allow flexible seating positions (knees up, cross-legged with knees in shirt)</span></li>
-  <li><span class="box">&#9744;</span><span>Access to a blanket in class (sensitivity to cold)</span></li>
-  <li><span class="box">&#9744;</span><span>Permission to have a cushioned or more comfortable chair (family will provide)</span></li>
-  <li><span class="box">&#9744;</span><span>Permission to snack as needed (steroid medications increase appetite)</span></li>
-  <li><span class="box">&#9744;</span><span>Ensure adequate water intake throughout the day (helps with medication-related dizziness)</span></li>
-  <li><span class="box">&#9744;</span><span>Modified or low-impact participation in gym and physical activities during flare-ups</span></li>
-  <li><span class="box">&#9744;</span><span>Reduced walking distances when experiencing leg inflammation or gait issues</span></li>
-  <li><span class="box">&#9744;</span><span>Excused absences for flare-ups, medical appointments, and lab work</span></li>
-  <li><span class="box">&#9744;</span><span>Separation from visibly sick students or during known outbreaks (especially if on immunosuppressants)</span></li>
-  <li><span class="box">&#9744;</span><span>Teachers periodically check in on how the child is feeling (may not speak up on their own)</span></li>
-  <li><span class="box">&#9744;</span><span>Minimize drawing attention to accommodations (anxiety about being singled out)</span></li>
+  <li>May miss school during a flare-up</li>
+  <li>Has multiple follow-up appointments, labs, etc.</li>
+  <li>If there are known outbreaks of contagious diseases or visible signs of kids being sick, parents may need child to sit separately or not attend school (especially if on immunosuppressant medication)</li>
 </ul>
 
-<label class="field">Additional accommodations specific to your child: <span class="fill-line"></span></label>
-<label class="field"><span class="fill-line"></span></label>
-<label class="field"><span class="fill-line"></span></label>
-
-<h2>Questions to Ask at the Meeting</h2>
-<div class="questions">
-<ol>
-  <li>What is the process for my child to take a break when needed without disrupting class?<span class="fill-line"></span></li>
-  <li>Who will be trained to recognize the signs of a flare-up?<span class="fill-line"></span></li>
-  <li>How will substitute teachers be informed about these accommodations?<span class="fill-line"></span></li>
-  <li>What is the plan for making up work missed during absences or medical appointments?<span class="fill-line"></span></li>
-  <li>Can we arrange a comfortable seating option, and can we provide it ourselves?<span class="fill-line"></span></li>
-  <li>How will gym and recess be handled during a flare-up or when mobility is limited?<span class="fill-line"></span></li>
-  <li>What is the protocol if there is a contagious illness outbreak in the classroom?<span class="fill-line"></span></li>
-  <li>How can teachers discreetly check in without drawing peer attention?<span class="fill-line"></span></li>
-  <li>When and how will we review and update this 504 plan?<span class="fill-line"></span></li>
-</ol>
+<div class="fill-block">
+  <div class="label">Current immunosuppressant status / notes:</div>
 </div>
 
-<label class="field">Your additional questions: <span class="fill-line"></span></label>
-<label class="field"><span class="fill-line"></span></label>
+<hr class="section-divider">
 
-<p class="note" style="margin-left:0; margin-top:20px;">Important: Children with sJIA may try to mask or hide symptoms because they are tired of being sick, scared of hospitalization, or anxious about attention. Teachers play a critical role in watching for subtle signs and gently checking in.</p>
+<h2>Day-to-Day Support in the Classroom</h2>
 
-<div class="footer">
-  <strong>SJIAHelp.com</strong> | Free resource for sJIA families
+<h3>Movement &amp; Positioning</h3>
+<ul class="checklist">
+  <li>May need to take periodic breaks to stand and stretch, body gets stiff if seated too long</li>
+  <li>Alternate between sitting and standing during the day</li>
+  <li>Allow lying on the carpet to do work if helpful</li>
+  <li>Allow sitting with knees up or knees in shirt during criss-cross seating</li>
+</ul>
+
+<h3>Physical Activity</h3>
+<ul class="checklist">
+  <li>During a minor flare or leg inflammation, walking ability may be limited (sometimes even to the end of a hallway)</li>
+  <li>Keep active but low impact, no high-intensity activities during flare periods</li>
+  <li>May not be able to participate in gym/sports during flare-ups</li>
+</ul>
+
+<h3>Comfort &amp; Environment</h3>
+<ul class="checklist">
+  <li>Sensitive to cold, allow a blanket in class</li>
+  <li>A softer/cushioned chair can help (parents are happy to purchase one)</li>
+  <li>Sensitive to temperature fluctuations</li>
+  <li>Allow snacks when hungry (steroids can cause increased appetite)</li>
+  <li>Ensure drinking lots of water (especially important if on steroids, which can cause dizziness)</li>
+</ul>
+
+<h3>Emotional &amp; Social</h3>
+<ul class="checklist">
+  <li>Check in periodically, ask how they are doing or feeling, this child may not be comfortable speaking up</li>
+  <li>Experiences anxiety, and stress can trigger a flare-up</li>
+  <li>Does not like attention on them, will frequently not speak up even when in pain</li>
+  <li>Tired of the condition and will try to mask or hide what is happening</li>
+  <li>May be scared of going back to the hospital or having a flare-up with more tests/labs</li>
+  <li>Dizziness may occur (can increase fall risk), make sure they are drinking water</li>
+</ul>
+
+<div class="callout warning">
+  <strong>Key concern:</strong> This child tends to hide symptoms because they don't want attention. This can make a flare-up worse. Teachers play a critical role in watching for early warning signs and gently checking in.
+</div>
+
+<hr class="section-divider">
+
+<h2>Specific Accommodations Requested</h2>
+
+<div class="fill-block" style="min-height: 100px;">
+  <div class="label">List your specific 504 accommodation requests here:</div>
+</div>
+
+<h3>Common sJIA 504 Accommodations</h3>
+<ul class="checklist">
+  <li>Flexible attendance policy for flare days and medical appointments</li>
+  <li>Permission to stand, stretch, or change position during class</li>
+  <li>Modified or excused PE participation during flares</li>
+  <li>Access to snacks and water throughout the day</li>
+  <li>Blanket or comfort items in classroom</li>
+  <li>Cushioned seating option</li>
+  <li>Elevator access if applicable</li>
+  <li>Extended time for assignments missed due to illness</li>
+  <li>Reduced homework load during active flare periods</li>
+  <li>Permission to leave class for nurse/restroom without delay</li>
+  <li>Plan for contagious illness exposure (separate seating or early dismissal)</li>
+</ul>
+
+<hr class="section-divider">
+
+<h2>Emergency Contact Information</h2>
+<p><strong>Parent/Guardian 1:</strong> <span class="fill-line"></span></p>
+<p><strong>Parent/Guardian 2:</strong> <span class="fill-line"></span></p>
+<p><strong>Rheumatologist:</strong> <span class="fill-line"></span></p>
+<p><strong>Rheumatologist Phone:</strong> <span class="fill-line"></span></p>
+<p><strong>Pediatrician:</strong> <span class="fill-line"></span></p>
+<p><strong>Preferred Hospital/ER:</strong> <span class="fill-line"></span></p>
+
+<div class="fill-block">
+  <div class="label">Additional notes for the school team:</div>
 </div>
 
 </div>
+
+<div class="footer-spacer"></div>
+<div class="footer">SJIAHelp.com &nbsp;|&nbsp; A free resource for sJIA families &nbsp;|&nbsp; Not medical or legal advice</div>
+
 </body>
 </html>

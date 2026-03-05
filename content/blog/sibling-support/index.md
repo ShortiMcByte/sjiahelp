@@ -3,8 +3,16 @@ title: "When a Brother or Sister Has sJIA: Supporting the Siblings Who Get Lost 
 date: 2026-03-05
 draft: false
 description: "Honest guidance for parents on supporting siblings of children with sJIA, from managing guilt and resentment to preserving connection."
+keywords: ["siblings chronic illness", "sJIA sibling support", "sibling chronic illness resources", "Sibshops juvenile arthritis", "brother sister chronic illness"]
 tags: ["siblings", "family", "caregivers", "mental health"]
 summary: "In the intensity of managing sJIA, siblings can quietly get lost. They love their brother or sister fiercely, and they sometimes feel overlooked even in families who are trying their best."
+faq:
+  - q: "How do I talk to my other children about their sibling's sJIA?"
+    a: "Tailor your explanation to their age. For children ages 3 to 6, focus on simple reassurance: it is not their fault, they cannot catch it, and they are loved the same. For ages 7 to 11, offer more detail about what sJIA does in the body. For teenagers, include them in conversations and ask for their input. The most important thing is having the conversation at all and returning to it regularly."
+  - q: "What resources are available for siblings of children with chronic illness?"
+    a: "The Sibling Support Project (siblingsupport.org) runs Sibshops, peer support workshops specifically for siblings of children with special health needs. They also maintain reading lists and resources for families. A school counselor or child therapist can be a valuable outlet, even for just a few check-in sessions."
+  - q: "How can I help a sibling who feels left out or resentful?"
+    a: "Protect one-on-one time with the sibling, even 30 focused minutes makes a difference. Protect their activities when possible. When they say things feel unfair, validate it directly: 'I know it is not fair.' Name their strength and patience explicitly. Let them be angry without correcting the situation. The message underneath it all is: your feelings are welcome here."
 ---
 
 In the intensity of managing sJIA, siblings can quietly get lost. They love their brother or sister fiercely, they worry about things they don't have words for, and they sometimes feel overlooked even in families who are trying their best. This guide is for them, and for the parents who love all of their kids equally and are doing their best in an impossible situation.

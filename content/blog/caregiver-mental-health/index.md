@@ -3,8 +3,16 @@ title: "Taking Care of the Caregiver: Mental Health and Burnout Resources for sJ
 date: 2026-03-05
 draft: false
 description: "Honest guidance for exhausted sJIA parents on caregiver burnout, guilt, mental health resources, and practical strategies that actually help."
+keywords: ["sJIA caregiver burnout", "parent chronic illness mental health", "sJIA parent support", "caregiver self-care chronic illness"]
 tags: ["caregivers", "mental health", "burnout", "self-care"]
 summary: "Nobody talks about this part. You are so busy fighting for your child that you forget you are a person too. This guide is for you."
+faq:
+  - q: "How do I know if I have caregiver burnout from managing my child's sJIA?"
+    a: "Caregiver burnout often doesn't look like a dramatic breakdown. Watch for feeling numb during crises you used to fear, snapping at your partner without energy to apologize, skipping your own doctor appointments, dreading the phone ringing, or losing interest in things that used to matter. If any of this sounds familiar, you are not a bad parent. You are an exhausted one."
+  - q: "What mental health support is available for parents of children with sJIA?"
+    a: "Several resources exist specifically for caregivers. Headway (headway.co) helps you find in-network therapists using your insurance. The Caregiver Action Network (caregiveraction.org) provides community and resources. ARCH National Respite Network (archrespite.org) connects families with respite care. NAMI (nami.org) offers peer support and a helpline at 1-800-950-6264."
+  - q: "Is it normal to feel angry or resentful as a parent of a child with chronic illness?"
+    a: "Yes, and it is more common than most parents admit. Feeling angry at the disease, occasionally frustrated with your child, or resentful of how sJIA has changed your family's life does not make you a bad parent. These are normal responses to an extremely difficult situation. Acknowledging these feelings is the first step toward processing them."
 ---
 
 Nobody talks about this part. You are so busy fighting for your child that you forget you are a person too. This guide is for you, the parent in the waiting room, the one Googling at midnight, the one holding it together for everyone else.

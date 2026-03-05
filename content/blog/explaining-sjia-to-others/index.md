@@ -3,8 +3,16 @@ title: "Explaining sJIA to Others: A Guide for Teachers, Grandparents, Friends, 
 date: 2026-03-05
 draft: false
 description: "How to explain systemic juvenile idiopathic arthritis to teachers, family, coaches, and friends, with a copy-paste explanation and audience-specific guidance."
+keywords: ["explain sJIA to teachers", "explain juvenile arthritis to school", "sJIA invisible illness", "how to explain sJIA", "sJIA school communication"]
 tags: ["school", "teachers", "communication", "family"]
 summary: "One of the most exhausting parts of sJIA is explaining it over and over to people who love your child but have never heard of it. This guide gives you the words."
+faq:
+  - q: "How do I explain sJIA to my child's teacher?"
+    a: "Start with a brief one-paragraph explanation: sJIA is a rare autoinflammatory disease where the immune system attacks the body, causing unpredictable fevers, pain, and fatigue. Emphasize that it is an invisible illness, that your child may look fine while feeling seriously unwell, and that a 504 Plan formalizes the school's obligations. The blockquoted explanation in this guide can be copied and shared directly."
+  - q: "What should coaches know about a child with sJIA?"
+    a: "On good days, children with sJIA often want to participate fully. On flare days, modification or rest is medical, not optional. A visible limp means no running. Heat and cold sensitivity are real. Coaches should check in quietly rather than drawing peer attention, and contact parents if they notice a limp, unusual fatigue, or a child who seems unwell."
+  - q: "How do I explain sJIA to grandparents or extended family?"
+    a: "Keep it direct. Share the one-paragraph explanation in this guide. Ask them to follow your lead on diet, not push your child to power through pain or fatigue, and avoid saying 'you don't look sick.' The most helpful thing extended family can do is treat your child normally and ask about things they love, not about their illness."
 ---
 
 One of the most exhausting parts of this disease is explaining it, over and over, to people who love your child but have never heard of sJIA. We put this guide together so you have the words ready, and so others can truly understand what your family is living with.

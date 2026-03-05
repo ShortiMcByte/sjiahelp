@@ -3,6 +3,7 @@ title: "sJIA 504 Plan: School Accommodations for Systemic Juvenile Idiopathic Ar
 date: 2026-03-05
 draft: false
 description: "What is a 504 Plan and what accommodations should students with sJIA have? A complete guide for parents navigating school support for systemic JIA."
+keywords: ["504 plan sJIA", "504 accommodations juvenile arthritis", "sJIA school accommodations", "systemic JIA 504 plan", "juvenile arthritis 504"]
 tags: ["school", "504 plan", "accommodations"]
 summary: "A complete guide to 504 Plans for students with sJIA, including which accommodations to request, how to set up a meeting, and what to expect."
 faq:

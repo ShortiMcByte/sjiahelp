@@ -3,8 +3,16 @@ title: "Eating to Fight Inflammation: An Anti-Inflammatory Diet Guide for sJIA F
 date: 2026-03-05
 draft: false
 description: "A parent's guide to anti-inflammatory eating for kids with sJIA, with practical food lists, meal ideas, and honest advice from our family's experience."
+keywords: ["anti-inflammatory diet sJIA", "sJIA diet guide", "foods for juvenile arthritis", "inflammation diet children", "sJIA nutrition"]
 tags: ["nutrition", "diet", "flare management"]
 summary: "We are not doctors or nutritionists, we are parents who walked this road and wish someone had handed us this list on day one. Here is what we learned about food and inflammation."
+faq:
+  - q: "Can diet help reduce sJIA flares?"
+    a: "There is no scientific proof that diet alone controls sJIA, but many families have noticed that anti-inflammatory eating helped reduce the frequency or severity of flares. sJIA involves chronic inflammation, and certain foods are known to support or worsen the body's inflammatory response. Always discuss significant dietary changes with your child's rheumatologist."
+  - q: "Should children with sJIA avoid dairy and gluten?"
+    a: "Some families have found that eliminating dairy and gluten during active disease or flares helped reduce inflammation. This is not a universal recommendation. Corbin's family went dairy and gluten free in the early months after diagnosis and observed improvement, but every child responds differently. Consult your child's care team before making major changes."
+  - q: "What are the most anti-inflammatory foods for children with sJIA?"
+    a: "Fatty fish like salmon and sardines, leafy greens, berries, olive oil, turmeric with black pepper, ginger, walnuts, beans, and colorful vegetables like sweet potatoes and broccoli are among the most research-supported anti-inflammatory foods. Reducing processed sugar, refined carbohydrates, and vegetable seed oils is equally important."
 ---
 
 We are not doctors or nutritionists, we are parents who walked this road and wish someone had handed us this list on day one. Always work with your child's medical team before making major dietary changes, especially if your child is on immunosuppressants or steroids.
@@ -152,6 +160,12 @@ Probiotic-rich foods like yogurt (with live cultures), kefir, sauerkraut, and ki
 **Snack:** Apple slices with almond butter. Or dairy-free coconut yogurt with berries.
 
 **Dinner:** Baked salmon with lemon and olive oil. Brown rice or quinoa. Roasted broccoli or sweet potato. Side salad with leafy greens, cherry tomatoes, avocado, and olive oil dressing.
+
+## Quick Reference: Foods at a Glance
+
+Save or share our printable anti-inflammatory food card, a quick visual guide to the eat/avoid list you can keep on your fridge or send to a grandparent.
+
+[View the Anti-Inflammatory Foods Card](/images/infographic-anti-inflammatory-foods.html) | [Download PDF](/images/infographic-anti-inflammatory-foods.pdf)
 
 ## Recipes From Our Family
 
