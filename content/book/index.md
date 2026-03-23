@@ -40,9 +40,9 @@ The book covers:
 
 The book is written for children, but it's equally valuable for teachers, school nurses, and classmates who want to understand what a friend with sJIA is going through.
 
-## Coming Soon
+## Get Notified
 
-We're setting up our email list and will have a waitlist ready shortly. Check back soon to be the first to know when the book is available.
+{{< waitlist context="book" >}}
 
 ## About the Author
 
