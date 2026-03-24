@@ -32,7 +32,7 @@ export async function onRequestPost(context) {
       email_address: email,
       status: "subscribed",
       ip_signup: context.request.headers.get("CF-Connecting-IP") || "",
-      timestamp_signup: new Date().toISOString(),
+      timestamp_signup: new Date().toISOString().replace(/\.\d{3}Z$/, "+00:00"),
     };
 
     if (firstName) {
@@ -89,7 +89,7 @@ export async function onRequestPost(context) {
     }
 
     return new Response(
-      JSON.stringify({ success: false, message: `We couldn't add you right now (${data.title || 'unknown error'}). Please try again in a few minutes.`, debug: { title: data.title, detail: data.detail, errors: data.errors, status: response.status } }),
+      JSON.stringify({ success: false, message: "We couldn't add you right now. Please try again in a few minutes." }),
       { status: 500, headers: corsHeaders }
     );
 
