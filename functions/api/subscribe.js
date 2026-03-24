@@ -67,9 +67,16 @@ export async function onRequestPost(context) {
       );
     }
 
-    if (data.title === "Invalid Resource") {
+    if (data.title === "Invalid Resource" && data.detail && data.detail.includes("looks fake or invalid")) {
       return new Response(
         JSON.stringify({ success: false, message: "That email doesn't look right. Please check and try again." }),
+        { status: 400, headers: corsHeaders }
+      );
+    }
+
+    if (data.title === "Forgotten Email Not Subscribed") {
+      return new Response(
+        JSON.stringify({ success: false, message: "This email was previously removed. Please use a different email or re-subscribe through Mailchimp directly." }),
         { status: 400, headers: corsHeaders }
       );
     }
@@ -82,7 +89,7 @@ export async function onRequestPost(context) {
     }
 
     return new Response(
-      JSON.stringify({ success: false, message: "We couldn't add you right now. Please try again in a few minutes." }),
+      JSON.stringify({ success: false, message: `We couldn't add you right now (${data.title || 'unknown error'}). Please try again in a few minutes.` }),
       { status: 500, headers: corsHeaders }
     );
 
