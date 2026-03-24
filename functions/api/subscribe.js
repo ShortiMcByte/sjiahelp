@@ -31,6 +31,8 @@ export async function onRequestPost(context) {
     const memberData = {
       email_address: email,
       status: "subscribed",
+      ip_signup: context.request.headers.get("CF-Connecting-IP") || "",
+      timestamp_signup: new Date().toISOString(),
     };
 
     if (firstName) {
@@ -65,8 +67,22 @@ export async function onRequestPost(context) {
       );
     }
 
+    if (data.title === "Invalid Resource") {
+      return new Response(
+        JSON.stringify({ success: false, message: "That email doesn't look right. Please check and try again." }),
+        { status: 400, headers: corsHeaders }
+      );
+    }
+
+    if (response.status === 401 || response.status === 403) {
+      return new Response(
+        JSON.stringify({ success: false, message: "Our mailing list is temporarily being set up. Please check back soon." }),
+        { status: 503, headers: corsHeaders }
+      );
+    }
+
     return new Response(
-      JSON.stringify({ success: false, message: "Something went wrong. Please try again." }),
+      JSON.stringify({ success: false, message: "We couldn't add you right now. Please try again in a few minutes." }),
       { status: 500, headers: corsHeaders }
     );
 
