@@ -89,7 +89,7 @@ export async function onRequestPost(context) {
     }
 
     return new Response(
-      JSON.stringify({ success: false, message: `We couldn't add you right now (${data.title || 'unknown error'}). Please try again in a few minutes.`, debug: { title: data.title, detail: data.detail, status: response.status } }),
+      JSON.stringify({ success: false, message: `We couldn't add you right now (${data.title || 'unknown error'}). Please try again in a few minutes.`, debug: { title: data.title, detail: data.detail, errors: data.errors, status: response.status } }),
       { status: 500, headers: corsHeaders }
     );
 
